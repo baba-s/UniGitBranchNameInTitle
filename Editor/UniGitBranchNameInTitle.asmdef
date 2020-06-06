@@ -1,0 +1,18 @@
+{
+    "name": "UniGitBranchNameInTitle",
+    "references": [
+        "GUID:0a423f63796eede4597d5088a00b3f5e",
+        "GUID:7a6d2a78c43f8714fb96bbd8a8457826"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
