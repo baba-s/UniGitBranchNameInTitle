@@ -23,6 +23,15 @@ namespace Kogane.Internal
 		/// </summary>
 		static GitBranchNameInTitle()
 		{
+			UpdateDisp();
+			EditorApplication.playModeStateChanged += state => UpdateDisp();
+		}
+
+		/// <summary>
+		/// タイトルの表示を更新します
+		/// </summary>
+		private static void UpdateDisp()
+		{
 			// https://github.com/Unity-Technologies/UnityCsReference/blob/master/Editor/Mono/EditorApplication.cs
 			var activeSceneName = L10n.Tr( "Untitled" );
 
