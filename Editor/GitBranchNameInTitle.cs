@@ -85,7 +85,7 @@ namespace Kogane.Internal
 			var projectName = Path.GetFileName( Path.GetDirectoryName( Application.dataPath ) );
 			var targetName  = GetBuildTargetGroupDisplayName( BuildPipeline.GetBuildTargetGroup( EditorUserBuildSettings.activeBuildTarget ) );
 			var version     = Application.unityVersion;
-			var licenseType = InternalEditorUtility.HasPro() ? "Pro" : "Personal";
+			var licenseType = InternalEditorUtility.HasPro() ? "" : "Personal";
 			var branchName  = GitUtils.LoadBranchName();
 			var title       = $"{projectName} - {activeSceneName} - {targetName} - Unity {version} {licenseType}";
 
